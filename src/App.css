@@ -16,7 +16,8 @@ b {
   font-weight: 500;
 }
 
-/* Header Styling */
+/************** Header Styling *************/
+
 .Header {
   height: 24rem;
   position: relative;
@@ -33,6 +34,7 @@ b {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+  animation: fadein 2s;
 }
 
 .NameBox-Text {
@@ -43,16 +45,21 @@ b {
   transform: translate(-50%, -50%);
 }
 
-/* ProjectList Styling */
+/************** ProjectList Styling *************/
 
 .ProjectList {
-  /* border: 1px solid black; */
   height: 30rem;
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .ProjectCard {
   display: inline-block;
-  position:relative;
+  position: relative;
 }
 
 .ProjectCard-Card {
@@ -117,7 +124,7 @@ b {
   left: 10%;
 }
 
-/* Footer Styling */
+/************** Footer Styling *************/
 
 .Footer {
   position: relative;
@@ -140,6 +147,11 @@ b {
 
 .Footer-Text a:visited {
   color: #909090;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* .App {
