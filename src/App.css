@@ -1,3 +1,147 @@
+* {
+  text-align: center;
+  font-family: "Sora",sans-serif;
+  font-weight: 300;
+}
+
+body {
+  min-width: 70rem;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+b {
+  font-weight: 500;
+}
+
+/* Header Styling */
+.Header {
+  height: 24rem;
+  position: relative;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.NameBox {
+  position: absolute;
+  border: 10px solid #dddadaab;
+  height: 35%;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.NameBox-Text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* ProjectList Styling */
+
+.ProjectList {
+  /* border: 1px solid black; */
+  height: 30rem;
+}
+
+.ProjectCard {
+  display: inline-block;
+  position:relative;
+}
+
+.ProjectCard-Card {
+  position: relative;
+  height: 14rem;
+  width: 27rem;
+  margin: 1rem 3rem;
+  border: 1px solid rgb(221, 218, 218);
+  background-size: 100%;
+}
+
+.ProjectCard-Card::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.ProjectCard-Card:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ProjectCard-Card::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: black;
+  opacity: 0.7;
+  z-index: 1;
+  transition: transform .3s ease;
+}
+
+.description {
+  position: absolute;
+  display: block;
+  right: 2rem;
+  left: 2rem;
+  text-align: center;
+  top: 50%;
+  width: 60px;
+  margin: auto;
+  color: white;
+  z-index: 100;
+  opacity: 0;
+  transform: translate3d(0, -50%, 0);
+  transition: .3s 0s;
+}
+
+.description a:visited {
+  color: white;
+}
+
+.ProjectCard-Card:hover .description {
+  opacity: 1;
+  transition: .6s .3s;
+}
+
+.ProjectCard-Text {
+  width: 27rem;
+  position: absolute;
+  left: 10%;
+}
+
+/* Footer Styling */
+
+.Footer {
+  position: relative;
+  height: 6rem;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.Footer-Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #909090;
+}
+
+.Footer-Text a {
+  text-decoration: none;
+}
+
+.Footer-Text a:visited {
+  color: #909090;
+}
+
 /* .App {
   text-align: center;
 }
