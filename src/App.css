@@ -144,6 +144,7 @@ b {
 
 .Footer-Text a {
   text-decoration: none;
+  color: #909090;
 }
 
 .Footer-Text a:visited {
