@@ -1,9 +1,12 @@
 import ProjectCard from "./ProjectCard";
 import jobly from './jobly.png';
 import warbler from './warbler.png';
+import minesweeper from './minesweeper.png';
 
 const JOBLY_URL = "http://jobly-grant-li.surge.sh/";
 const WARBLER_URL = "https://warbler-r22-grant-li.herokuapp.com/";
+const MINESWEEPER_URL = "http://laughable-property.surge.sh/";
+
 const joblyText = (
   <div>
     <p><b>Tech Stack:</b> React, Express, PostgreSQL, Bootstrap</p>
@@ -17,13 +20,23 @@ const warblerText = (
   </div>
 );
 
+const minesweeperText = (
+  <div>
+    <p><b>Tech Stack:</b> React, TypeScript</p>
+    <p><b>Description:</b> Based off of the popular Minesweeper game; built with a depth-first search (DFS) algorithm</p>
+  </div>
+);
+
 function ProjectList() {
 
   return (
     <div className="ProjectList">
       <h1>Projects</h1>
-      <ProjectCard name="Jobly" img={jobly} url={JOBLY_URL} text={joblyText}/>
-      <ProjectCard name="Warbler" img={warbler} url={WARBLER_URL} text={warblerText}/>
+      <div className="row">
+        <ProjectCard name="Jobly" img={jobly} url={JOBLY_URL} text={joblyText}/>
+        <ProjectCard name="Warbler" img={warbler} url={WARBLER_URL} text={warblerText}/>
+        <ProjectCard name="Minesweeper" img={minesweeper} url={MINESWEEPER_URL} text={minesweeperText}/>
+      </div>
     </div>
   );
 }
