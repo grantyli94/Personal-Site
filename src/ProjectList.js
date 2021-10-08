@@ -5,7 +5,7 @@ import minesweeper from './minesweeper.png';
 
 const JOBLY_URL = "http://jobly-grant-li.surge.sh/";
 const WARBLER_URL = "https://warbler-r22-grant-li.herokuapp.com/";
-const MINESWEEPER_URL = "http://laughable-property.surge.sh/";
+const MINESWEEPER_URL = "http://www.minesweeper.grant-li.com/";
 
 const joblyText = (
   <div>
